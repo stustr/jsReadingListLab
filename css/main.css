@@ -1,3 +1,29 @@
 body {
   font-family: Palatino;
+  background-color: purple;
+  color: whitesmoke;
 }
+
+.reading-item{
+  list-style: none;
+  border-radius: 1rem;
+  background-color: yellow;
+  color: purple;
+  padding: 1rem;
+}
+
+.Blog {
+  background-color: grey;
+  color: black;
+}
+
+.reading-item.Article {
+  background-color: navy;
+  color: navajowhite;
+}
+
+
+
+
+
+

@@ -16,13 +16,13 @@ const handleFormSubmit = function (event) {
   const newTitleDiv = document.createElement("div");
   const newAuthorDiv = document.createElement("div");
   const newCategoryDiv = document.createElement("div");
-  newLi.className = "reading-item";
+  newLi.className = `reading-item ${category}`;
   newTitleDiv.className = "title";
   newAuthorDiv.className = "author";
   newCategoryDiv.className = "category";
-  newLi.appendChild(newTitleDiv).textContent = title;
-  newLi.appendChild(newAuthorDiv).textContent = author;
-  newLi.appendChild(newCategoryDiv).textContent = category;
+  newLi.appendChild(newTitleDiv).textContent = `Title: ${title}`;
+  newLi.appendChild(newAuthorDiv).textContent = `Author: ${author}`;
+  newLi.appendChild(newCategoryDiv).textContent = `Category: ${category}`;
   document.querySelector("#reading-list").appendChild(newLi);
   event.preventDefault();
   this.reset();
